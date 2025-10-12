@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numa - Finde Ruhe. Komm bei dir an. Wachse mit dem Leben.</title>
+    <meta name="description" content="Numa begleitet dich durch Phasen des Wandels, der Neuorientierung und des persönlichen Wachstums. Für alle, die bewusst leben wollen.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .font-quicksand {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #FFB4C4 0%, #C59EC9 35%, #A7D4D1 70%, #F7CAB8 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #E8A0BF 0%, #BA90C6 35%, #7EBDC2 70%, #F7CAB8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Logo SVG -->
+                <svg width="50" height="50" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#E8A0BF;stop-opacity:1" />
+                            <stop offset="35%" style="stop-color:#BA90C6;stop-opacity:1" />
+                            <stop offset="70%" style="stop-color:#7EBDC2;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#F7CAB8;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#E8A0BF;stop-opacity:0.9" />
+                            <stop offset="100%" style="stop-color:#7EBDC2;stop-opacity:0.9" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="45" cy="80" r="28" fill="url(#logoGradient)" opacity="0.75"/>
+                    <circle cx="75" cy="60" r="33" fill="url(#logoGradient)" opacity="0.75"/>
+                    <circle cx="105" cy="75" r="28" fill="url(#logoGradient)" opacity="0.75"/>
+                    <path d="M 30 95 Q 52 85 75 95 Q 98 105 120 82" stroke="url(#lineGradient)" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9"/>
+                </svg>
+                <span class="font-quicksand text-2xl font-semibold text-gray-800 tracking-wide">numa</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="text-gray-700 hover:text-gray-900 transition">Features</a>
+                <a href="#about" class="text-gray-700 hover:text-gray-900 transition">Über Uns</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900 transition">Kontakt</a>
+            </div>
+            <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition">
+                App starten
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 gradient-bg">
+        <div class="max-w-6xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Finde Ruhe.<br>
+                Komm bei dir an.<br>
+                Wachse mit dem Leben.
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-4 font-light">
+                be. aware. evolve.
+            </p>
+            <p class="text-lg text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Veränderung ist Teil deines Weges – manchmal leise, manchmal herausfordernd.<br>
+                Unsere App begleitet dich in all den Momenten, in denen das Leben sich wandelt und du dich neu finden darfst.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover-lift">
+                    Jetzt starten
+                </button>
+                <button class="bg-white/20 backdrop-blur text-white px-8 py-4 rounded-full font-semibold text-lg border-2 border-white hover:bg-white/30 transition">
+                    Mehr erfahren
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">
+                Was Numa für dich tut
+            </h2>
+            <p class="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
+                Ob auf dem Weg ins Erwachsenwerden, bei ersten Prüfungen und Entscheidungen, oder einfach dann, wenn dir alles zu viel wird
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-effect rounded-3xl p-8 hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Reflexions- und Stimmungstagebuch</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Fördert Selbstbeobachtung und hilft, Gedanken, Emotionen und Veränderungen bewusst wahrzunehmen.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-effect rounded-3xl p-8 hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Achtsamkeits- und Dankbarkeitsübungen</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Stärkt das Bewusstsein für den Moment und unterstützt emotionale Stabilität.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-effect rounded-3xl p-8 hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Inspirierende Impulse & Lerninhalte</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Kurze, verständliche Inhalte zu Themen wie Loslassen, Neubeginn, Selbstakzeptanz und Resilienz.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass-effect rounded-3xl p-8 hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Geführte Meditationen & Atemübungen</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Helfen, innere Ruhe und Orientierung zu finden – besonders in herausfordernden Situationen.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="glass-effect rounded-3xl p-8 hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Personalisierte Routinen</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sanfte Erinnerungen unterstützen dabei, neue Lebensgewohnheiten zu etablieren und Selbstfürsorge aktiv zu leben.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="glass-effect rounded-3xl p-8 hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Erweiterte Analytics & Insights</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Erkenne Muster in deinem Wohlbefinden und erhalte personalisierte Empfehlungen für deine Entwicklung.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">
+                Für wen ist Numa?
+            </h2>
+            <p class="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
+                Für alle, die nicht nur funktionieren wollen – sondern bewusst leben, sich weiterentwickeln und ihr volles Potenzial entfalten.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text">Teens (13-18 Jahre)</h3>
+                    <p class="text-gray-600 mb-4">
+                        Auf dem Weg ins Erwachsenwerden, bei ersten Prüfungen und Entscheidungen, in der Berufswahl.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Rise: Wachstum & Zielorientierung</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Shapers: Selbstfindung & Identität</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Explorers: Entdecken & Neugier</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text">Junge Erwachsene</h3>
+                    <p class="text-gray-600 mb-4">
+                        In der Vorbereitung auf ein Kind, beim Übergang in den Beruf, bei Doppelbelastungen.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Karrierestart & Selbstfindung</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Balance zwischen verschiedenen Lebensbereichen</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Neue Verantwortungen meistern</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text">Erwachsene</h3>
+                    <p class="text-gray-600 mb-4">
+                        Bei Lebensübergängen, beim Übergang in den Ruhestand, oder wenn alles zu viel wird.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Veränderungen gestalten</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Work-Life-Balance finden</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Sinnfragen klären</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+                    <div class="text-4xl mb-4">💫</div>
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text">Persönliche Entwicklung</h3>
+                    <p class="text-gray-600 mb-4">
+                        Für alle, die kontinuierlich wachsen und ihr Bewusstsein erweitern möchten.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Selbsterkenntnis vertiefen</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Persönliche Potenziale entdecken</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-2">•</span>
+                            <span>Bewusster leben</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 gradient-bg">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Bereit für deine Reise?
+            </h2>
+            <p class="text-xl mb-10 opacity-90">
+                Starte jetzt – finde Klarheit, Stärke und Leichtigkeit auf deinem Weg.
+            </p>
+            <button class="bg-white text-gray-800 px-10 py-4 rounded-full font-semibold text-lg hover-lift">
+                App jetzt starten
+            </button>
+            <p class="mt-6 text-sm opacity-75">
+                Kostenlos starten • Keine Kreditkarte erforderlich
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <svg width="40" height="40" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#E8A0BF;stop-opacity:1" />
+                                <stop offset="35%" style="stop-color:#BA90C6;stop-opacity:1" />
+                                <stop offset="70%" style="stop-color:#7EBDC2;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F7CAB8;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="45" cy="80" r="28" fill="url(#footerLogoGradient)" opacity="0.75"/>
+                        <circle cx="75" cy="60" r="33" fill="url(#footerLogoGradient)" opacity="0.75"/>
+                        <circle cx="105" cy="75" r="28" fill="url(#footerLogoGradient)" opacity="0.75"/>
+                    </svg>
+                    <span class="font-quicksand text-xl font-semibold tracking-wide">numa</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    be. aware. evolve.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="font-semibold mb-4">Produkt</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition">Preise</a></li>
+                    <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-semibold mb-4">Unternehmen</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Über uns</a></li>
+                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Datenschutz</a></li>
+                    <li><a href="#" class="hover:text-white transition">Impressum</a></li>
+                    <li><a href="#" class="hover:text-white transition">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Numa. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
