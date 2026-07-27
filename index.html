@@ -82,7 +82,7 @@
             </div>
             <div class="hidden md:flex space-x-6">
                 <a href="#features" class="text-gray-700 hover:text-gray-900 transition">Features</a>
-                <a href="#about" class="text-gray-700 hover:text-gray-900 transition">Über Uns</a>
+                <a href="#zielgruppe" class="text-gray-700 hover:text-gray-900 transition">Für wen?</a>
                 <a href="#contact" class="text-gray-700 hover:text-gray-900 transition">Kontakt</a>
             </div>
             <a href="https://app.numa-app.de" class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition">
@@ -249,40 +249,53 @@
     </section>
 
     <!-- Target Audience Section -->
-    <section class="py-20 px-6 bg-gray-50">
+    <section id="zielgruppe" class="py-20 px-6 bg-gray-50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">
                 Für wen ist Numa?
             </h2>
-            <p class="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
+            <p class="text-center text-gray-600 mb-4 text-lg max-w-2xl mx-auto">
                 Für alle, die nicht nur funktionieren wollen – sondern bewusst leben, sich weiterentwickeln und ihr volles Potenzial entfalten.
+            </p>
+            <p class="text-center text-gray-500 mb-16 text-sm max-w-2xl mx-auto leading-relaxed">
+                Wir schauen dabei auf zwei Ebenen: deinen <span class="font-semibold gradient-text">Lebensabschnitt</span> – wo du gerade im Leben stehst – und deine <span class="font-semibold gradient-text">Lebenssituation</span> – was dich gerade konkret bewegt, unabhängig vom Alter. Klick auf eine Rolle für mehr Details.
             </p>
 
             <!-- Lebensabschnitte -->
             <div class="mb-12">
-                <h3 class="text-3xl font-semibold text-center mb-8 text-gray-800">dein Lebensabschnitt</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    
+                <h3 class="text-3xl font-semibold text-center mb-2 text-gray-800">dein Lebensabschnitt</h3>
+                <p class="text-center text-gray-500 text-sm mb-8">Numa wächst mit dir – von den ersten großen Fragen bis zum neuen Kapitel im Ruhestand.</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
                     <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift">
                         <div class="text-4xl mb-4">🌱</div>
-                        <h4 class="text-xl font-semibold mb-3 gradient-text">Teens (13-18)</h4>
+                        <h4 class="text-xl font-semibold mb-3 gradient-text">Teens (13–18)</h4>
                         <p class="text-gray-600 text-sm mb-3">
                             Identitätsfindung, erste Prüfungen, Berufswahl
                         </p>
-                        <ul class="space-y-1 text-gray-600 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Rise: Wachstum & Ziele</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Shapers: Selbstfindung</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Explorers: Entdecken</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-1">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Rise: Wachstum & Ziele</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will wachsen, stärker werden, mein Potenzial entfalten."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Shapers: Selbstfindung</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will mich selbst besser kennenlernen, herausfinden, wer ich bin."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Explorers: Entdecken</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will Neues entdecken – in mir selbst, mit anderen, in der Welt."</p>
+                            </details>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift">
@@ -291,64 +304,122 @@
                         <p class="text-gray-600 text-sm mb-3">
                             Studium, Karrierestart, erste große Entscheidungen
                         </p>
-                        <ul class="space-y-1 text-gray-600 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Trailblazers: Wegbereiter</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Explorers: Selbstfindung</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Balancers: Life-Balance</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-1">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Trailblazers: Wegbereiter</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will meinen Weg finden und Spuren hinterlassen."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Explorers: Selbstfindung</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will das Leben erkunden – mich selbst, andere, die Welt."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Balancers: Life-Balance</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will mein Leben im Gleichgewicht halten – trotz Chaos."</p>
+                            </details>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift">
-                        <div class="text-4xl mb-4">🌿</div>
-                        <h4 class="text-xl font-semibold mb-3 gradient-text">Erwachsene</h4>
+                        <div class="text-4xl mb-4">💼</div>
+                        <h4 class="text-xl font-semibold mb-3 gradient-text">Berufstätige</h4>
                         <p class="text-gray-600 text-sm mb-3">
-                            Lebensmitte, Karriere, Familie, Neuorientierung
+                            Karrieredruck, Work-Life-Balance, Weiterkommen
                         </p>
-                        <ul class="space-y-1 text-gray-600 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Achievers: Erfolg & Balance</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Transformers: Wandel gestalten</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Thrive: Vitalität & Qualität</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-1">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Achievers: Erfolg & Leistung</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will Ergebnisse liefern, Ziele erreichen und zeigen, was in mir steckt."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Balancers: Work-Life-Balance</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will Beruf und Leben in Einklang bringen – ohne mich dabei zu verlieren."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>NextLevel: nächste Stufe</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will nicht stagnieren – ich will wachsen, lernen und die nächste Stufe erreichen."</p>
+                            </details>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift">
-                        <div class="text-4xl mb-4">🌸</div>
-                        <h4 class="text-xl font-semibold mb-3 gradient-text">Lebensreife (65+)</h4>
+                        <div class="text-4xl mb-4">🧭</div>
+                        <h4 class="text-xl font-semibold mb-3 gradient-text">Lebensmitte</h4>
                         <p class="text-gray-600 text-sm mb-3">
-                            Ruhestand, Sinnfindung, neue Horizonte
+                            Lebensübergänge, Vitalität, Neuorientierung
                         </p>
-                        <ul class="space-y-1 text-gray-600 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Evergreens: Vital bleiben</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Wisdom Keepers: Vermächtnis</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>New Horizons: Neuanfang</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-1">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Navigators: Orientierung</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will mich in dieser Lebensphase orientieren und meinen nächsten Weg finden."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Transformers: Wandel gestalten</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will mich neu erfinden und diese Phase als Chance zur echten Veränderung nutzen."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Thrive Seekers: Aufblühen</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will in dieser Lebensphase aufblühen – körperlich, geistig und emotional."</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift">
+                        <div class="text-4xl mb-4">🌅</div>
+                        <h4 class="text-xl font-semibold mb-3 gradient-text">Senior:innen (65+)</h4>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Vitalität, Vermächtnis, neue Horizonte
+                        </p>
+                        <div class="space-y-1">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Evergreens: Vital bleiben</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will fit, aktiv und vital bleiben – mein Leben lang."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>Wisdom Keepers: neugierig bleiben</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich lebe aktiv, lerne Neues und freue mich auf das, was noch kommt."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600 text-sm"><span class="text-pink-400">•</span><span>New Horizons: Neuanfang</span></span>
+                                    <svg class="w-3.5 h-3.5 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-xs text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will neue Kapitel aufschlagen und das Leben jetzt erst richtig genießen."</p>
+                            </details>
+                        </div>
                     </div>
 
                 </div>
@@ -356,73 +427,101 @@
 
             <!-- Besondere Lebenssituationen -->
             <div>
-                <h3 class="text-3xl font-semibold text-center mb-8 text-gray-800">deine Lebenssituationen</h3>
+                <h3 class="text-3xl font-semibold text-center mb-2 text-gray-800">deine Lebenssituation</h3>
+                <p class="text-center text-gray-500 text-sm mb-8">Unabhängig vom Alter – manche Themen betreffen dich, egal wie alt du bist.</p>
                 <div class="grid md:grid-cols-3 gap-8">
-                    
+
                     <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
                         <div class="text-4xl mb-4">👨‍👩‍👧‍👦</div>
                         <h4 class="text-2xl font-semibold mb-3 gradient-text">Familie & Elternschaft</h4>
                         <p class="text-gray-600 mb-4">
                             Zwischen Fürsorge und Selbstfürsorge – für Eltern, die nicht nur funktionieren wollen.
                         </p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Roots: Stabilität & Halt geben</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Wings: Loslassen & wachsen lassen</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Family Flow: Harmonie im Alltag</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-2">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Roots: Stabilität & Halt geben</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will gut für mich sorgen, um auch für meine Familie da sein zu können."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Wings: Loslassen & wachsen lassen</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will lernen loszulassen und meinen Kindern vertrauen, ihren eigenen Weg zu gehen."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Family Flow: Harmonie im Alltag</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will mehr Harmonie, Struktur und gemeinsame Momente in unseren Familienalltag bringen."</p>
+                            </details>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
                         <div class="text-4xl mb-4">💼</div>
                         <h4 class="text-2xl font-semibold mb-3 gradient-text">Berufsleben & Karriere</h4>
                         <p class="text-gray-600 mb-4">
-                            Erfolgreich sein ohne auszubrennen – für alle im aktiven Berufsleben.
+                            Erfolgreich sein ohne auszubrennen – vom Berufseinstieg bis zur Führungsrolle.
                         </p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Achievers: Performance & Wachstum</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Balancers: Work-Life-Balance</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Shifters: Berufliche Neuorientierung</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-2">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Trailblazers: Berufseinstieg & Ambition</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will meinen Weg finden und Spuren hinterlassen."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Achievers: Erfolg & Leistung</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will Ergebnisse liefern, Ziele erreichen und zeigen, was in mir steckt."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>NextLevel: nächste Stufe erreichen</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will nicht stagnieren – ich will wachsen, lernen und die nächste Stufe erreichen."</p>
+                            </details>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
-                        <div class="text-4xl mb-4">✨</div>
-                        <h4 class="text-2xl font-semibold mb-3 gradient-text">Persönliche Entwicklung</h4>
+                        <div class="text-4xl mb-4">🧭</div>
+                        <h4 class="text-2xl font-semibold mb-3 gradient-text">Reflexion & Neuorientierung</h4>
                         <p class="text-gray-600 mb-4">
-                            Für alle, die kontinuierlich wachsen und ihr volles Potenzial entfalten wollen.
+                            Wenn sich etwas verändert – beruflich, familiär oder innerlich – und du Klarheit für den nächsten Schritt suchst.
                         </p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Pathfinders: Weg finden & Klarheit</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Growth Seekers: Wachstum & Skills</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-pink-400 mr-2">•</span>
-                                <span>Elevate: Bewusstsein erweitern</span>
-                            </li>
-                        </ul>
+                        <div class="space-y-2">
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Navigators: Orientierung finden</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will mich in dieser Lebensphase orientieren und meinen nächsten Weg finden."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Wings: Loslassen & vertrauen</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich will lernen loszulassen und meinen Kindern vertrauen, ihren eigenen Weg zu gehen."</p>
+                            </details>
+                            <details class="group">
+                                <summary class="flex items-start justify-between gap-2 cursor-pointer list-none py-1 [&::-webkit-details-marker]:hidden">
+                                    <span class="flex items-start gap-2 text-gray-600"><span class="text-pink-400">•</span><span>Wisdom Keepers: nach vorne blicken</span></span>
+                                    <svg class="w-4 h-4 text-gray-300 shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </summary>
+                                <p class="text-sm text-gray-400 italic pl-4 pt-1 pb-1 leading-relaxed">„Ich lebe aktiv, lerne Neues und freue mich auf das, was noch kommt."</p>
+                            </details>
+                        </div>
                     </div>
 
                 </div>
@@ -451,7 +550,7 @@
 
     <!-- Footer -->
     <footer id="contact" class="bg-gray-900 text-white py-12 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+        <div class="max-w-5xl mx-auto grid sm:grid-cols-3 gap-8">
             <div>
                 <div class="flex items-center space-x-2 mb-4">
                     <svg width="40" height="40" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
@@ -475,19 +574,9 @@
             </div>
             
             <div>
-                <h4 class="font-semibold mb-4">Produkt</h4>
+                <h4 class="font-semibold mb-4">Navigation</h4>
                 <ul class="space-y-2 text-gray-400 text-sm">
-                    <li><a href="#" class="hover:text-white transition">Features</a></li>
-                    <li><a href="#" class="hover:text-white transition">Preise</a></li>
-                    <li><a href="#" class="hover:text-white transition">FAQ</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h4 class="font-semibold mb-4">Unternehmen</h4>
-                <ul class="space-y-2 text-gray-400 text-sm">
-                    <li><a href="#" class="hover:text-white transition">Über uns</a></li>
-                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    <li><a href="#features" class="hover:text-white transition">Features</a></li>
                     <li><a href="mailto:hallo@numa-app.de" class="hover:text-white transition">Kontakt</a></li>
                 </ul>
             </div>
